@@ -1,0 +1,10 @@
+* [곧 자기자리로 찾아갈 개념들](./crumb.md)
+* [자바스크립트 Call Stack+WebAPI+Task Queue+Event loop](./chanho/js_stack_webapi_taskqueue_eventloop.md)
+* [Node JS 내부 동작](./chanho/nodejs_inner_process.md)
+* [Node JS Event Loop](./chanho/nodejs_event_loop_.md)
+* [프로세스와 스레드](./chanho/process_thread.md)
+* [파일 시스템](./chanho/fs.md)
+* [메모리 버퍼와 스트림](./chanho/memory_buffer_stream.md)
+
+
+c
