@@ -5,6 +5,3 @@
 * [프로세스와 스레드](./chanho/process_thread.md)
 * [파일 시스템](./chanho/fs.md)
 * [메모리 버퍼와 스트림](./chanho/memory_buffer_stream.md)
-
-
-c
