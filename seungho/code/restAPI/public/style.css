@@ -1,0 +1,20 @@
+#user-list{
+    border: aquamarine 1px solid;
+    border-radius: 15px;
+    background-color: blanchedalmond;
+}
+.user-card{
+    margin: 10px;
+    border: lightsalmon 1px solid;
+    background-color: orange;
+    border-radius: 6px;
+    padding: 8px;
+}
+button{
+    margin: 4px;
+    background-color: dodgerblue;
+    border-radius: 8px;
+    padding: 4px;
+    font-weight: bolder;
+    color: white;
+}

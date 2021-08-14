@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <a href="/">메인</a>
+    <a href="/upload">사진업로드</a>
+</div>
+<form id="form-upload-image" method="post" action="/upload" enctype="multipart/form-data" >
+    <div>
+        <label for="input-image-file">
+            <input id="input-image-file" type="file" name="image">
+        </label>
+    </div>
+    <div>
+        <label for="input-text">
+            <input id="input-text" type="text" name="file">
+        </label>
+    </div>
+    <button type="submit">업로드</button>
+</form>
+<div>{{path}}</div>
+{%if path%}
+<img src="/{{path}}" id="img-preview">
+{% endif %}
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/form.js"></script>
+
+</body>
+</html>
