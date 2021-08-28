@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mongoose Server</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="" id="user-form">
+            <fieldset>
+                <legend>사용자 등록</legend>
+                <div>
+                    <input type="text" id="username" placeholder="이름">
+                </div>
+                <div>
+                    <input type="number" min="0" id="age" placeholder="나이">
+                </div>
+                <div>
+                    <label for="info">자기소개</label><br>
+                    <textarea name="info" id="info" cols="30" rows="5"></textarea>
+                </div>
+                <button type="submit">등록</button>
+            </fieldset>
+        </form>
+    </div>
+    <br>
+    <table id="user-list">
+        <thead>
+            <tr>
+                <th>아이디</th>
+                <th>이름</th>
+                <th>나이</th>
+                <th>자기소개</th>
+                <th>구분</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.age }}</td>
+                <td>{{ user.info }}</td>
+                <td>{{ '관리자' if user.is_admin else '일반회원'  }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <div>
+        <form action="" id="post-form">
+            <fieldset>
+                <legend>게시글 등록</legend>
+                <div>
+                    <p id="get_user_id">사용자를 선택하세요.</p>
+                    <input type="hidden" id="user_id">
+                </div>
+                <div>
+                    <input type="text" id="title" placeholder="제목">
+                </div>
+                <div>
+                    <textarea name="body" id="body" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit">등록</button>
+            </fieldset>
+        </form>
+    </div>
+    <br>
+    <table id="post-list">
+        <thead>
+            <tr>
+                <th>아이디</th>
+                <th>작성자</th>
+                <th>제목</th>
+                <th>게시글</th>
+                <th>수정</th>
+                <th>삭제</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/mongoose.js"></script>
+</body>
+</html>
