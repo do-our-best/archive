@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB1 - Welcome</title>
+        <meta charset="utf-8" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <link rel='stylesheet' type='text/css' href='./style.css' />
+    </head>
+    <div class="page login-page">
+        <button class="login">로그인</button>
+    </div>
+
+    <div class="page service-page">
+        <h1>Maybe happy day</h1>
+        <div class="select-date">
+            <h2 class="title">날짜 고르기</h2>
+            <button>랜덤 선택</button>
+            <input type="text" />
+            <button class="next">-></button>
+        </div>
+        <div class="schedule">
+            <h2 class="title">일정 등록하기</h2>
+            <input type="text" />
+            <button class="next">-></button>
+        </div>
+        <div class="save">
+            <h2 class="title">저장하기</h2>
+            <button>save</button>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+    <script
+        src="https://apis.google.com/js/platform.js?onload=init"
+        async
+        defer>
+    </script>
+    </body>
+</html>

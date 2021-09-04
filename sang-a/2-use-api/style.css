@@ -1,0 +1,35 @@
+body {
+}
+.page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page {
+    background-color: ivory;
+}
+
+.service-page {
+    padding: 5rem;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.login {
+    display: inline-block;
+    height: 5rem;
+    width: 8rem;
+    background-color: skyblue;
+    border: 0.1px solid rgba(78, 143, 160, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: ivory;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
